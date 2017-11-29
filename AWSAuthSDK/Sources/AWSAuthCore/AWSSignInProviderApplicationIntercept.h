@@ -13,7 +13,8 @@
 // permissions and limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param launchOptions options used to launch the application
  * @return true if this call handled the operation
  */
-- (BOOL)interceptApplication:(UIApplication *)application
+- (BOOL)interceptApplication:(NSObject *)application
 didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions;
 
 /**
@@ -42,7 +43,7 @@ didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions;
  * @param annotation annotation
  * @return true if this call handled the operation
  */
-- (BOOL)interceptApplication:(UIApplication *)application
+- (BOOL)interceptApplication:(NSObject *)application
                      openURL:(NSURL *)url
            sourceApplication:(nullable NSString *)sourceApplication
                   annotation:(id)annotation;

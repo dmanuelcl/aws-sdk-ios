@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
   s.name         = 'AWSCognito'
   s.version      = '2.6.6'
-  s.summary      = 'Amazon Cognito SDK for iOS'
+  s.summary      = 'Amazon Cognito SDK for macOS'
 
   s.description  = 'Amazon Cognito offers multi device data synchronization with offline access'
 
   s.homepage     = 'http://aws.amazon.com/mobile/sdk'
   s.license      = 'Amazon Software License'
   s.author       = { 'Amazon Web Services' => 'amazonwebservices' }
-  s.platform     = :ios, '8.0'
+  s.platform     = :osx, '10.10'
   s.source       = { :git => 'https://github.com/aws/aws-sdk-ios.git',
                      :tag => s.version}
   s.requires_arc = true
