@@ -14,7 +14,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 #import <AWSUserPoolsSignIn/AWSUserPoolsSignIn.h>
 #import <AWSAuthCore/AWSUIConfiguration.h>
 
@@ -22,38 +22,38 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AWSUserPoolsUIOperations : NSObject
-
-/**
- Initialize UserPools with AuthUIConfiguration
- @param configuration AWSUIConfiguration
- **/
--(id)initWithAuthUIConfiguration:(id<AWSUIConfiguration>)configuration;
-
-/**
- Perform UserPools Login with username, password, completionhandler
- and the navigation controller of the application
- @param     userName            Username
- @param     password            Password
- @param     navController       NavigationController of the application's ViewController
- @param     completionHandler   Callback to the application's ViewController
- **/
--(void)loginWithUserName:(NSString *)userName
-                password:(NSString *)password
-    navigationController:(UINavigationController *)navController
-       completionHandler:(void (^)(id _Nullable result, NSError * _Nullable error))completionHandler;
-
-
-/**
- Push SignUp ViewController from NavigationController
- @param     navController       NavigationController of the application's ViewController
- **/
--(void)pushSignUpVCFromNavigationController:(UINavigationController *)navController;
-
-/**
- Push ForgotPassword ViewController from NavigationController
- @param     navController       NavigationController of the application's ViewController
- **/
--(void)pushForgotPasswordVCFromNavigationController:(UINavigationController *)navController;
+//
+///**
+// Initialize UserPools with AuthUIConfiguration
+// @param configuration AWSUIConfiguration
+// **/
+//-(id)initWithAuthUIConfiguration:(id<AWSUIConfiguration>)configuration;
+//
+///**
+// Perform UserPools Login with username, password, completionhandler
+// and the navigation controller of the application
+// @param     userName            Username
+// @param     password            Password
+// @param     navController       NavigationController of the application's ViewController
+// @param     completionHandler   Callback to the application's ViewController
+// **/
+//-(void)loginWithUserName:(NSString *)userName
+//                password:(NSString *)password
+//    navigationController:(NavigationController *)navController
+//       completionHandler:(void (^)(id _Nullable result, NSError * _Nullable error))completionHandler;
+//
+//
+///**
+// Push SignUp ViewController from NavigationController
+// @param     navController       NavigationController of the application's ViewController
+// **/
+//-(void)pushSignUpVCFromNavigationController:(UINavigationController *)navController;
+//
+///**
+// Push ForgotPassword ViewController from NavigationController
+// @param     navController       NavigationController of the application's ViewController
+// **/
+//-(void)pushForgotPasswordVCFromNavigationController:(UINavigationController *)navController;
 
 @end
 

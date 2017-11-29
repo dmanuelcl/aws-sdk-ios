@@ -13,19 +13,20 @@
 // permissions and limitations under the License.
 //
 
+
 @protocol AWSUIConfiguration <NSObject>
 
 /**
  @property logoImage
  @brief The logo to be used on the Auth UI Screen
  **/
-@property (nonatomic, nullable) UIImage *logoImage;
+@property (nonatomic, nullable) NSImage *logoImage;
 
 /**
  @property backgroundColor
  @brief Gets the backgorund color of the sign in screen configured by the user
  **/
-@property (nonatomic, nullable) UIColor *backgroundColor;
+@property (nonatomic, nullable) NSColor *backgroundColor;
 
 /**
  @property fullScreenBackgroundColor
@@ -37,6 +38,6 @@
  @property font
  @brief Font for the text in the SignInView and all its subviews.
  **/
-@property (nonatomic, nullable) UIFont *font;
+@property (nonatomic, nullable) NSFont *font;
 
 @end

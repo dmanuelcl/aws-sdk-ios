@@ -141,7 +141,7 @@ static AWSIdentityManager *identityManager;
     }];
 }
 
-- (BOOL)interceptApplication:(NSObject *)application
+- (BOOL)interceptApplication:(NSApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     for(NSString *key in [self getRegisteredSignInProviders]) {
         id<AWSSignInProvider> signInProvider = [self signInProviderForKey:key];
@@ -154,7 +154,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     return YES;
 }
 
-- (BOOL)interceptApplication:(NSObject *)application
+- (BOOL)interceptApplication:(NSApplication *)application
                      openURL:(NSURL *)url
            sourceApplication:(NSString *)sourceApplication
                   annotation:(id)annotation {

@@ -13,7 +13,7 @@
 // permissions and limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
 
 //! Project version number for AWSUserPoolsSignIn.
 FOUNDATION_EXPORT double AWSUserPoolsSignInVersionNumber;
@@ -22,4 +22,5 @@ FOUNDATION_EXPORT double AWSUserPoolsSignInVersionNumber;
 FOUNDATION_EXPORT const unsigned char AWSUserPoolsSignInVersionString[];
 
 #import <AWSUserPoolsSignIn/AWSCognitoUserPoolsSignInProvider.h>
-#import <AWSUserPoolsSignIn/AWSUserPoolsUIOperations.h>
+//#import <AWSUserPoolsSignIn/AWSUserPoolsUIOperations.h>
+

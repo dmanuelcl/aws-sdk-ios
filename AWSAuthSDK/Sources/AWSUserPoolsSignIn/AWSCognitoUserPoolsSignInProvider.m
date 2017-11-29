@@ -28,7 +28,7 @@ typedef void (^AWSSignInManagerCompletionBlock)(id result, NSError *error);
 
 @interface AWSCognitoUserPoolsSignInProvider()
 
-@property (strong, nonatomic) UIViewController *signInViewController;
+@property (strong, nonatomic) NSViewController *signInViewController;
 @property (atomic, copy) AWSSignInManagerCompletionBlock completionHandler;
 @property (strong, nonatomic) id<AWSCognitoUserPoolsSignInHandler> interactiveAuthenticationDelegate;
 @property (strong, nonatomic) AWSCognitoIdentityUserPool *currentUserPool;
@@ -76,7 +76,7 @@ cognitoIdentityUserPoolAppClientSecret:(NSString *)cognitoIdentityUserPoolAppCli
     return self.currentUserPool;
 }
 
-- (void)setViewControllerForUserPoolsSignIn:(UIViewController *)signInViewController {
+- (void)setViewControllerForUserPoolsSignIn:(NSViewController *)signInViewController {
     self.signInViewController = signInViewController;
 }
 
@@ -129,12 +129,12 @@ cognitoIdentityUserPoolAppClientSecret:(NSString *)cognitoIdentityUserPoolAppCli
     [pool.currentUser signOut];
 }
 
-- (BOOL)interceptApplication:(UIApplication *)application
+- (BOOL)interceptApplication:(NSApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     return YES;
 }
 
-- (BOOL)interceptApplication:(UIApplication *)application
+- (BOOL)interceptApplication:(NSApplication *)application
                      openURL:(NSURL *)url
            sourceApplication:(NSString *)sourceApplication
                   annotation:(id)annotation {
